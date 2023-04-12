@@ -189,24 +189,6 @@ body {
     fill: #f4f4f4;
 }
 
-.banner {
-    background: #a770ef;
-    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-    padding-top: 60px;
-}
-
 .float {
     position: fixed;
     width: 60px;
@@ -268,5 +250,42 @@ a:hover {
 
     #main_text {
         font-size: 4vh;
+    }
+}
+
+
+/*LOAD CONTAINER FOR ALL*/
+#carga {
+    border: 15px solid #ccc;
+    border-top-color: #ffde59;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: girar 1.5s linear infinite;
+}
+
+#contenedor_carga {
+    background-color: #25d366;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
