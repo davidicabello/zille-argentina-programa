@@ -16,6 +16,10 @@ body {
     padding-bottom: 60px;
 }
 
+.w-100 {
+    width: 100% !important;
+    height: 500px;
+}
 
 .navcontainer {
     max-width: 90%;
@@ -269,7 +273,11 @@ a:hover {
     #main_text {
         font-size: 4vh;
     }
-    
+
+    .w-100 {
+        width: 100% !important;
+        height: 250px;
+    }
 }
 
 @media (max-width:600px) {
