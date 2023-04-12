@@ -57,9 +57,9 @@ body {
     position: relative;
 }
 
-.container {
+/* .container {
     max-width: initial;
-}
+} */
 
 .section_hero-main {
     position: relative;
@@ -269,6 +269,7 @@ a:hover {
     #main_text {
         font-size: 4vh;
     }
+    
 }
 
 @media (max-width:600px) {
