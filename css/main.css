@@ -217,43 +217,6 @@ a:hover {
     color: #3b625f;
 }
 
-@media (max-width:991px) {
-    .section_hero-main {
-        text-align: center;
-    }
-
-    .hero-image1 {
-        max-width: 60%;
-    }
-
-    .img-sesiones {
-        max-width: 60%;
-    }
-
-    #main_text {
-        font-size: 4vh;
-    }
-}
-
-@media (max-width:600px) {
-    .section_hero-main {
-        text-align: center;
-    }
-
-    .hero-image1 {
-        max-width: 60%;
-    }
-
-    .img-sesiones {
-        max-width: 35%;
-    }
-
-    #main_text {
-        font-size: 4vh;
-    }
-}
-
-
 /*LOAD CONTAINER FOR ALL*/
 #carga {
     border: 15px solid #ccc;
@@ -287,5 +250,41 @@ a:hover {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width:991px) {
+    .section_hero-main {
+        text-align: center;
+    }
+
+    .hero-image1 {
+        max-width: 60%;
+    }
+
+    .img-sesiones {
+        max-width: 60%;
+    }
+
+    #main_text {
+        font-size: 4vh;
+    }
+}
+
+@media (max-width:600px) {
+    .section_hero-main {
+        text-align: center;
+    }
+
+    .hero-image1 {
+        max-width: 60%;
+    }
+
+    .img-sesiones {
+        max-width: 35%;
+    }
+
+    #main_text {
+        font-size: 4vh;
     }
 }
