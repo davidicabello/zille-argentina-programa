@@ -139,14 +139,9 @@ body {
 .bg-img {
     min-height: 175px;
     max-width: auto;
-    /* The image used */
     background: url(../images/newnav.svg)no-repeat center center;
-
-    /* Center and scale the image nicely */
     background-size: cover;
-    /* Needed to position the navbar */
     background-size: cover;
-
 }
 
 .custom-shape-divider-top-1652746492 {
