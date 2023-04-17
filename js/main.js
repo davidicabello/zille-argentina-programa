@@ -25,7 +25,7 @@ $(document).ready(function () {
                 let blueDolar = data.blue.value_buy;
                 let totalArs = presupuesto;
                 let totalUsd = totalArs / blueDolar;
-                $("#presupuesto").html("La conversion de : $" + totalArs + " pesos a dolares al cambio del dia es u$s " + totalUsd);
+                $("#presupuesto").html("La conversión de : $" + totalArs + " pesos a dólares al cambio del dia es u$s " + totalUsd);
 
             });
     });
@@ -38,14 +38,30 @@ $('#send_pdf').click(function () {
     let nombre = $("#form4Example1").val();
     let mail = $("#form4Example2").val();
     let form = $("#form4Example3").val();
-    doc.setFontSize(14);
-    doc.text(40, 30, nombre);
-    doc.text(40, 40, mail);
-    doc.text(40, 50, form);
-    doc.save('formulario.pdf');
+    if (nombre === '' || mail === '' || form === '') {
+        return
+    } else {
+        doc.setFontSize(14);
+        doc.text(40, 30, nombre);
+        doc.text(40, 40, mail);
+        doc.text(40, 50, form);
+        doc.save('formulario.pdf');
+    }
 });
 
-
+(() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
 
 window.onload = function () {
     let contenedor = document.getElementById('contenedor_carga');

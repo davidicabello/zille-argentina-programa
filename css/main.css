@@ -94,7 +94,7 @@ body {
     display: inline-block;
     justify-content: center;
     text-decoration: none;
-    color: #343434;
+    color: #000;
     border-radius: 15px;
     margin-top: 10px;
 }
@@ -128,12 +128,12 @@ body {
     text-align: left;
 }
 
-.hero-image {
-    display: -ms-inline-grid;
-}
 
 .hero-image2 {
     max-width: auto;
+    height: 50%;
+    width: 60%;
+    margin-top: 80px;
 }
 
 .bg-img {
@@ -145,9 +145,6 @@ body {
     /* Center and scale the image nicely */
     background-size: cover;
     /* Needed to position the navbar */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
 }
@@ -191,6 +188,48 @@ body {
 
 .custom-shape-divider-bottom-1652746064 .shape-fill {
     fill: #f4f4f4;
+}
+
+.custom-shape-divider-bottom-1681762432 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681762432 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 89px;
+}
+
+.custom-shape-divider-bottom-1681762432 .shape-fill {
+    fill: #ffde59;
+}
+
+.custom-shape-divider-top-1681762607 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1681762607 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 89px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1681762607 .shape-fill {
+    fill: #ffde59;
 }
 
 .float {
